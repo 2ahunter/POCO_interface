@@ -4,6 +4,11 @@
 	(generator_version "8.0")
 	(uuid "e5349d26-9b49-407d-81d8-acb23816f13d")
 	(paper "A3")
+	(title_block
+		(title "POCO: Galil Extended IO to Digital IO Interface PCB")
+		(date "2025-02-19")
+		(rev "1.0")
+	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_02x25_Odd_Even"
 			(pin_names
@@ -1536,6 +1541,108 @@
 				)
 			)
 		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "N10280-52E2PC:N10280-52E2PC"
 			(pin_names
 				(offset 1.016)
@@ -3054,6 +3161,18 @@
 			)
 		)
 	)
+	(junction
+		(at 312.42 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0e29f36d-2545-4864-859b-09039eced7b8")
+	)
+	(junction
+		(at 339.09 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f90076c2-9dbd-45a9-a746-7979b08d353e")
+	)
 	(no_connect
 		(at 104.14 190.5)
 		(uuid "1372c4c3-db35-4857-9bb6-fb0bd6821e06")
@@ -3938,6 +4057,16 @@
 	)
 	(wire
 		(pts
+			(xy 339.09 41.91) (xy 367.03 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bc7a7d0-3acd-447a-ad75-fba044df6140")
+	)
+	(wire
+		(pts
 			(xy 254 185.42) (xy 264.16 185.42)
 		)
 		(stroke
@@ -4328,6 +4457,16 @@
 	)
 	(wire
 		(pts
+			(xy 288.29 41.91) (xy 312.42 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9949a166-641a-4274-b786-5e9f9be05ed1")
+	)
+	(wire
+		(pts
 			(xy 81.28 226.06) (xy 81.28 200.66)
 		)
 		(stroke
@@ -4635,6 +4774,16 @@
 			(type default)
 		)
 		(uuid "c94b8967-2c19-4bfc-b147-6c1d1e2b630d")
+	)
+	(wire
+		(pts
+			(xy 312.42 41.91) (xy 339.09 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbe974b9-7bb5-4ce2-8107-3062ef85e49d")
 	)
 	(wire
 		(pts
@@ -4958,7 +5107,6 @@
 	)
 	(label "West"
 		(at 256.54 132.08 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4969,7 +5117,6 @@
 	)
 	(label "Dec < 12 deg Limit"
 		(at 220.98 147.32 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4980,7 +5127,6 @@
 	)
 	(label "Ground"
 		(at 255.27 190.5 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4991,7 +5137,6 @@
 	)
 	(label "Audio Alarm"
 		(at 233.68 167.64 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5002,7 +5147,6 @@
 	)
 	(label "East"
 		(at 234.95 132.08 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5013,7 +5157,6 @@
 	)
 	(label "Platform In Way"
 		(at 238.76 187.96 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5024,7 +5167,6 @@
 	)
 	(label "Telescope Power"
 		(at 256.54 137.16 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5035,7 +5177,6 @@
 	)
 	(label "North Slew"
 		(at 229.87 154.94 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5046,7 +5187,6 @@
 	)
 	(label "South Slew Disable"
 		(at 231.14 165.1 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5057,7 +5197,6 @@
 	)
 	(label "Focus Up"
 		(at 256.54 170.18 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5068,7 +5207,6 @@
 	)
 	(label "West Slew Disable"
 		(at 238.76 162.56 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5079,7 +5217,6 @@
 	)
 	(label "Dome Left"
 		(at 229.87 149.86 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5090,7 +5227,6 @@
 	)
 	(label "North Slew DIsable"
 		(at 256.54 162.56 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5101,7 +5237,6 @@
 	)
 	(label "LASONSKY"
 		(at 256.54 185.42 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5112,7 +5247,6 @@
 	)
 	(label "Dome Moving Left"
 		(at 222.25 152.4 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5123,7 +5257,6 @@
 	)
 	(label "5th Mirror Limit"
 		(at 256.54 144.78 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5134,7 +5267,6 @@
 	)
 	(label "Set (paddle input)"
 		(at 227.33 129.54 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5145,7 +5277,6 @@
 	)
 	(label "Dome Moving Right"
 		(at 256.54 152.4 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5154,9 +5285,18 @@
 		)
 		(uuid "4dc68252-387f-4207-a5c2-8cfdc18a2e4d")
 	)
+	(label "Ground"
+		(at 353.06 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "503d3f06-0304-4007-8ec5-c1e5ddd76f67")
+	)
 	(label "North Tan Limit"
 		(at 256.54 139.7 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5167,7 +5307,6 @@
 	)
 	(label "South Tan LImit"
 		(at 224.79 142.24 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5178,7 +5317,6 @@
 	)
 	(label "North Tan Center Limit"
 		(at 256.54 142.24 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5189,7 +5327,6 @@
 	)
 	(label "Slew Stop"
 		(at 236.22 170.18 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5200,7 +5337,6 @@
 	)
 	(label "Tel ID"
 		(at 256.54 187.96 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5211,7 +5347,6 @@
 	)
 	(label "South"
 		(at 256.54 134.62 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5222,7 +5357,6 @@
 	)
 	(label "Dome In Way"
 		(at 256.54 172.72 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5231,9 +5365,8 @@
 		)
 		(uuid "843e9f8d-9093-4ad6-b153-6c3943d9cd12")
 	)
-	(label "Slew Enable"
-		(at 228.6 137.16 0)
-		(fields_autoplaced yes)
+	(label "Slew Enable in"
+		(at 226.06 137.16 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5244,7 +5377,6 @@
 	)
 	(label "North"
 		(at 234.95 134.62 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5253,9 +5385,8 @@
 		)
 		(uuid "8ed0dbee-31eb-439e-9c2d-736716d7e733")
 	)
-	(label "Slew Enable"
-		(at 228.6 160.02 0)
-		(fields_autoplaced yes)
+	(label "Slew Enable out"
+		(at 226.06 160.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5266,7 +5397,6 @@
 	)
 	(label "West Slew"
 		(at 256.54 157.48 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5277,7 +5407,6 @@
 	)
 	(label "Slew"
 		(at 256.54 129.54 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5288,7 +5417,6 @@
 	)
 	(label "East Slew Disable"
 		(at 256.54 160.02 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5299,7 +5427,6 @@
 	)
 	(label "Focus Down"
 		(at 240.03 172.72 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5310,7 +5437,6 @@
 	)
 	(label "Stepper Enable"
 		(at 256.54 167.64 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5321,7 +5447,6 @@
 	)
 	(label "East Slew"
 		(at 229.87 157.48 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5332,7 +5457,6 @@
 	)
 	(label "Unknown"
 		(at 256.54 147.32 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5343,7 +5467,6 @@
 	)
 	(label "RA Oil Limit"
 		(at 228.6 139.7 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5354,7 +5477,6 @@
 	)
 	(label "Software Panic"
 		(at 256.54 165.1 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5365,7 +5487,6 @@
 	)
 	(label "+5V"
 		(at 233.68 190.5 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5376,7 +5497,6 @@
 	)
 	(label "South Slew"
 		(at 256.54 154.94 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5387,7 +5507,6 @@
 	)
 	(label "Dome Right"
 		(at 256.54 149.86 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5398,7 +5517,6 @@
 	)
 	(label "South Tan Center Limit"
 		(at 218.44 144.78 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5721,6 +5839,207 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 288.29 39.37 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "642d6882-629f-4fdb-8348-5a9f663cca28")
+		(property "Reference" "H1"
+			(at 290.83 36.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 290.83 39.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify top)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
+			(at 288.29 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 288.29 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 288.29 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b90a66f9-57bf-4e87-9131-44e92d51cf73")
+		)
+		(instances
+			(project ""
+				(path "/e5349d26-9b49-407d-81d8-acb23816f13d"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 312.42 39.37 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6549db47-9b27-4972-8a46-ff6bf283ff20")
+		(property "Reference" "H2"
+			(at 314.96 36.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 314.96 39.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify top)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
+			(at 312.42 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 312.42 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 312.42 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4efbb18a-8058-4280-88d6-71b455f537fd")
+		)
+		(instances
+			(project ""
+				(path "/e5349d26-9b49-407d-81d8-acb23816f13d"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 339.09 39.37 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b75b0d58-20a6-4f7c-8f14-b3fabfc7f30a")
+		(property "Reference" "H3"
+			(at 341.63 36.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 341.63 39.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify top)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
+			(at 339.09 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 339.09 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 339.09 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ef878e27-f60c-4af1-8def-070a6c897a52")
+		)
+		(instances
+			(project ""
+				(path "/e5349d26-9b49-407d-81d8-acb23816f13d"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_02x25_Odd_Even")
 		(at 246.38 160.02 0)
 		(unit 1)
@@ -5927,6 +6246,73 @@
 			(project ""
 				(path "/e5349d26-9b49-407d-81d8-acb23816f13d"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 367.03 39.37 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e9816275-843e-4568-b847-353643b8f1f4")
+		(property "Reference" "H4"
+			(at 369.57 36.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 369.57 39.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify top)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
+			(at 367.03 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 367.03 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 367.03 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8e9173be-c06b-4a7a-a41e-ce213ee427b1")
+		)
+		(instances
+			(project ""
+				(path "/e5349d26-9b49-407d-81d8-acb23816f13d"
+					(reference "H4")
 					(unit 1)
 				)
 			)
